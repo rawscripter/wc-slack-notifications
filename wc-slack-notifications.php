@@ -84,7 +84,7 @@ if (in_array(
             $order = wc_get_order($order_id);
 
             // Basic info
-            $order_total   = $order->get_formatted_order_total();
+            $order_total   = $order->get_total();
             $billing_name  = trim($order->get_billing_first_name() . ' ' . $order->get_billing_last_name());
             $shipping_name = trim($order->get_shipping_first_name() . ' ' . $order->get_shipping_last_name());
             $billing_email = $order->get_billing_email();
